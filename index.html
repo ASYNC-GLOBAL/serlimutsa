@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:title" content="SERLIMUT">
+    <meta property="og:title" content="SERLIMUT">
+
+    <meta name="description" content="Pagina web de la empresa SERLIMUT dedicada al servicio de limpieza, matenimiento y saneamiento ambiental" />
+    <meta name="keywords" content="SERLIMUT, limpieza, oficinas, limpieza oficinas, clean office, mantenimiento ,  saneaminto ambiental" />
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>SERLIMUT</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav class="container-xl navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-img" href="#">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse  justify-content-center " id="navbarNav">
+                    <ul class="navbar-nav  justify-content-around">
+
+                        <li class="nav-item  mx-2 ">
+                            <a class="a-link link-active" href="#">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item  mx-2 ">
+                            <a class=" a-link" onclick="nosotrosScroll()">
+                                NOSOTROS
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2 ">
+                            <a class=" a-link" onclick="serviciosScroll()">
+                                SERVICIO
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2  ">
+                            <a class=" a-link " href="#">
+                                 NOTICIAS 
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2  ">
+                            <a class=" a-link" onclick="clientesScroll()">
+                                CLIENTES
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2  ">
+                            <a class=" a-link" onclick="contactScroll()">
+                                CONTACTANOS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid   px-0">
+
+        <div id="mask-container">
+
+
+            <!-- Slider main container -->
+            <div class="swiper-container" id="mask-swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper ">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/homeport/homeport1.jpg" alt="" class="mask-img" srcset="assets/img/homeport/homeport1-movil.jpg 991w, assets/img/homeport/homeport1-movil-550.jpg 550w, assets/img/homeport/homeport1-movil-300.jpg 300w">
+                    </div>
+                    <div class="swiper-slide ">
+                        <img src="assets/img/homeport/homeport2.jpg" alt="" class="mask-img" srcset="assets/img/homeport/homeport2-movil.jpg 991w, assets/img/homeport/homeport2-movil-550.jpg 550w, assets/img/homeport/homeport2-movil-300.jpg 300w">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/homeport/homeport3.jpg" alt="" class="mask-img" srcset="assets/img/homeport/homeport3-movil.jpg 991w, assets/img/homeport/homeport3-movil-550.jpg 550w, assets/img/homeport/homeport3-movil-300.jpg 300w">
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination mask-pagination"></div>
+
+                <div id="mask-info">
+                    <span>BIENVENIDO A SERLIMUT</span>
+                    <h1>Servicio de Limpieza</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto praesentium vel provident enim </p>
+                    <div class="button-mask-div ">
+                        <a href=" " class="btn btn-mask btn-servicios">SERVICIOS </a>
+                        <a href=" " class="btn btn-mask btn-contacto">CONTACTO </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" id="mask-button-prev"></div>
+            <div class="swiper-button-next" id="mask-button-next"></div>
+
+
+
+        </div>
+
+        <div id="info-serlimut-div">
+            <div class="container-xl ">
+                <div class="row mx-0" id="info-serlimut-content">
+                    <div class="col-12 col-lg-6">
+
+                        <div id="selimut-img">
+                            <img src="assets/img/teamwork.jpg" alt="" srcset="assets/img/teamwork-550.jpg 550w, assets/img/teamwork-300.jpg 300w">
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6" id="info-serlimut">
+                        <span>SOBRE NOSOTROS</span>
+                        <h1>Los Especialistas en Limpieza</h1>
+                        <p>
+                            Somos una empresa que lleva más de 26 años en el mercado, dentro del cual ha logrado el reconocimiento tanto de todos sus clientes como de sus proveedores, somos responsables de la dotación de personal calificado para importantes empresas, trabajamos
+                            en el constante desarrollo de nuestro equipo humano, así como en la utilización de tecnologías modernas de última generación que faciliten el desarrollo de nuestros servicios.
+                        </p>
+                        <li><i class="fas fa-check-circle"></i>Neat & Cleaning Service</li>
+                        <li><i class="fas fa-check-circle"></i>Office & Property Clean</li>
+                        <li><i class="fas fa-check-circle"></i>Expert Cleaner</li>
+                        <li><i class="fas fa-check-circle"></i>24/7 Online Support</li>
+
+                        <div class="div-button-info ">
+                            <a href=" " class="btn btn-leer ">READ MORE <i class="fas fa-angle-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="servicios-div">
+            <div class="container-xl " id="servicios-container">
+                <h1 class="text-center servicios-titulo">Nuestros Servicios</h1>
+                <div id="servicios-content">
+                    <div class="servicio">
+                        <div class="servicio-img">
+                            <img src="assets/img/servicios/servicio1.jpg" alt="">
+                        </div>
+                        <h1 class="servicio-nombre">SERVICIO DE LIMPIEZA PERMANENTE</h1>
+                        <p class="service-info">
+                            Oficinas, Hoteles, Centros Comerciales, Hospitales, Clínicas, Colegios, Bancos, Fabricas y Toda clase de Inmuebles.
+                        </p>
+
+                        <div class="btn-service-div">
+                            <a href="" class="btn "><i class="fas fa-arrow-right icon-read"></i> <span> READ MORE</span></a>
+                        </div>
+                    </div>
+
+                    <div class="servicio">
+                        <div class="servicio-img">
+                            <img src="assets/img/servicios/servicio2.jpg" alt="">
+                        </div>
+                        <h1 class="servicio-nombre">SERVICIOS DE FUMIGACION</h1>
+                        <p class="service-info">
+                            Este servicio consiste en la eliminación de bacterias, microbios, virus, hongos y mohos con la aplicación del desinfectante en forma de nebulización y pulverización.
+                        </p>
+
+                        <div class="btn-service-div">
+                            <a href="" class="btn "><i class="fas fa-arrow-right icon-read"></i> <span> READ MORE</span></a>
+                        </div>
+                    </div>
+
+                    <div class="servicio">
+                        <div class="servicio-img">
+                            <img src="assets/img/servicios/servicio3.png" alt="">
+                        </div>
+                        <h1 class="servicio-nombre">SERVICIOS COMPLEMENTARIOS</h1>
+                        <p class="service-info">
+                            En forma complementaria a las actividades anteriormente descritas, SERLIMUT S.A.C. provee a sus clientes de personal de apoyo, tales como chóferes, mensajeros y otros.
+                        </p>
+
+                        <div class="btn-service-div">
+                            <a href="" class="btn "><i class="fas fa-arrow-right icon-read"></i> <span> READ MORE</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-servicios-div">
+                    <a href=" " class="btn btn-servicios-all">SEE ALL <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div id="info-work-div">
+            <div class="container-xl">
+                <div id="info-work-container">
+                    <div class="info-work">
+                        <div class="work-img">
+                            <!-- <h1><i class="far fa-clock"></i></h1> -->
+                            <img src="assets/img/work/work1.png" alt="">
+
+                        </div>
+                        <h1 class="work-titulo">HORAS DE TRABAJO</h1>
+                        <p class="work-info">Contamos con un horario de trabajo que nos permite estar conectados contigo y satisfacer todas tus necesidades</p>
+                    </div>
+                    <div class="info-work">
+                        <div class="work-img">
+                            <img src="assets/img/work/work2.png" alt="">
+                        </div>
+                        <h1 class="work-titulo">PROJECTOS SORPRENDENTES</h1>
+                        <p class="work-info">Tenemos projectos sorprendentes con multiples empresas internacionales que nos ayudaran a mejorar tu experiencia llevandote los productos de mejor calidad</p>
+                    </div>
+                    <div class="info-work">
+                        <div class="work-img">
+                            <img src="assets/img/work/work3.png" alt="">
+                        </div>
+                        <h1 class="work-titulo">PRESENTES</h1>
+                        <p class="work-info">Destacamos a todos nuestros clientes ,recuerda que nuestro principal objetivo es que se sientan como en familia </p>
+                    </div>
+                    <div class="info-work">
+                        <div class="work-img">
+                            <img src="assets/img/work/work4.png" alt="">
+                        </div>
+                        <h1 class="work-titulo">EQUIPO DE ATENCION</h1>
+                        <p class="work-info">Contamos con un equipo de atención a tu disposicion para solventar todas tus dudas y ayudarte en todo momento</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="clientes-div">
+            <div class="container-xl" id="clientes-container">
+                <h1 class="text-center" id="clientes-titulo">Nuestros Clientes</h1>
+                <div id="clientes-content">
+                    <div class="cliente">
+                        <img src="assets/img/clientes/natura.jpg" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img src="assets/img/clientes/aap.jpg" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img src="assets/img/clientes/metso.png" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img src="assets/img/clientes/trilce.jpg" alt="">
+                    </div>
+                </div>
+                <div id="button-clientes-div">
+                    <a href="" class="btn btn-clientes">SEE ALL <i class="fas fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-div">
+            <div class="container-xxl px-0">
+                <div class="row mx-0 " id="contact-container">
+
+                    <div class="col-12 " id="contact-content">
+                        <div id="contact-info">
+
+                            <h1 class="text-center">¿ Necesitas Ayuda ?</h1>
+                            <p class="text-center">Contamos con un centro de atencion disponible donde nos centramos sólo en ti y en tus necesidades.
+                            </p>
+                            <span class=" contact-call">Llamanos !! estamos disponibles. </span>
+                            <span class="contact-number">(511) 241-6338</span>
+                            <div id="btn-ayuda-content">
+                                <a href="centroAyuda.html" class="btn btn-ayuda mx-auto ">Centro de Contacto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <footer class="container-fluid px-0">
+        <div class="container-xl">
+            <div class="row mx-0" id="footer-menu">
+                <div class="col-12 col-lg-4">
+                    <!-- <h1>LA EMPRESA</h1> -->
+                    <div id="logo-footer">
+                        <img src="assets/img/logo.png" alt="">
+                    </div>
+                    <ul class="footer-list-menu">
+                        <li>
+                            <a onclick="nosotrosScroll()">Nosotros</a>
+                        </li>
+                        <li>
+                            <a onclick="serviciosScroll()">Nuestros Servicios</a>
+                        </li>
+                        <li>
+                            <a onclick="clientesScroll()">Clientes</a>
+                        </li>
+                        <li id="footer-li-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-pinterest-p"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+
+
+                        </li>
+                    </ul>
+                    <div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-4 ">
+
+                    <h1>LEGAL</h1>
+                    <ul class="footer-list-menu">
+                        <li>
+                            <a href="#">Politica de Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="#">Politica de Seguridad</a>
+                        </li>
+                        <li>
+                            <a href="#">Terminos y Condiciones</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Pregutas Fecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <h1>CONTACTANOS</h1>
+                    <ul class="footer-list-menu">
+                        <div>
+                            <li>
+                                <i class="fas fa-home me-2 "></i>Av. Domingo Orue Nº 794, Of.201 - Surquillo
+                            </li>
+                            <li>
+                                <i class="fas fa-mobile-alt me-2"></i> (511) 241-6338</h2>
+                            </li>
+                            <li>
+                                <i class="fas fa-mobile-alt me-2"></i> (511) 241-6452</h2>
+                            </li>
+                        </div>
+                        <div class="mt-2">
+                            <li>
+                                <i class="far fa-envelope me-2"></i>Email:info@Serlimutsa.com.pe
+                            </li>
+
+                        </div>
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="row mx-0" id="footer-copy">
+            <div class="col-12 px-0">
+                <h1 class="text-center">&copy;2021
+                    <a href="">ASYNC - Todos los derechos reservados</a>
+                </h1>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj " crossorigin="anonymous "></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+
+</html>
